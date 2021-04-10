@@ -1,6 +1,7 @@
 from trainer import *
 from synonym import *
 from BotActionChart import *
+from wiki import *
 #from GuiControl import *
 
 #author: MichaelOdermatt
@@ -81,7 +82,6 @@ def get_response(inp):
     #find synonyms
     synonimousPhrases = findSynonyms(inp)
     synonimousPhrases.insert(0, inp)
-    print(synonimousPhrases)
     for phrase in synonimousPhrases:
         print("phrase: ", phrase)
         global prevTag
@@ -93,6 +93,8 @@ def get_response(inp):
                 print(prevTag)
                 return handleYesOrNoInput(tag, prevTag)
             else:
+                if "what is" in phrase:
+                    return getDefinition(phrase)
                 for tg in data["intents"]:
                     if tg['tag'] == tag:
                         responses = tg['responses']
