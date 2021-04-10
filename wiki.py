@@ -27,6 +27,11 @@ def getDefinition(input):
                 else:
                     keyword = wordList[wordList.index("what") + 2]
                     answer = queryWord(keyword)
+        elif i == "define":
+            keyword = wordList[wordList.index("define") + 1]
+            answer = queryWord(keyword)
+            
+            
     return answer
 
 #this function takes a word and queries the result from wiki with error handling and disambiguation handling

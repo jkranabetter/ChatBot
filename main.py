@@ -93,7 +93,7 @@ def get_response(inp):
                 print(prevTag)
                 return handleYesOrNoInput(tag, prevTag)
             else:
-                if "what is" in phrase:
+                if "what is" or "define" in phrase:
                     return getDefinition(phrase)
                 for tg in data["intents"]:
                     if tg['tag'] == tag:
