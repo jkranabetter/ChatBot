@@ -40,13 +40,12 @@ Source: https://docs.python.org/3/library/tkinter.html
 The unit tests were created using PyUnit. The unittest framkework was imported into the tes_bot.py file.
 Each unittest uses assert statements to verify if the output obtained is the one desired. Our unit tests use assertTrue to verify if a boolean statement returns a True value. The test will pass only if the value returned by the function is true.  Our  tests validate the get_response() function in the main.py file. The two first tests identify if the response of the ML model is within the accepted set of resposes provided in the intents.json file.  The final test verifies if the synonym identifier is working properly and uses asserTrue as well to verify the response. 
 
-
-
-
-
+### Wiki Search Queries
+The search queries are handled by the pythin wiki api:https://wikipedia.readthedocs.io/en/latest/code.html
+The bot looks for search keywords "define", "what is" or "what are", finds the keyword in the sentence, and returns a summary of the keyword. In the case of disambiguation the most relavant article is chosen. This is in its own class called 'wiki.py' and contains two functions called getDefinition() and queryWord(). getDefinition() is called by the main chat program when the user is asking for a definition. It finds the keyword in the string and calls the queryWord() function. The queryWord() funtion gets the summary of the keyword and handles disambiguatioin.
 
 ### Features in this Assignment
-* Synonym Recognition (10 points) (see above for explanation)
-* Machine Learning (10 points) (see above for explanation)
-* Graphical User Interface (5 points) (see above for explanation)
+* Wiki Search Queries (10 points) (see above for explanation)
+* - (10 points) (see above for explanation)
+* - (5 points) (see above for explanation)
 
