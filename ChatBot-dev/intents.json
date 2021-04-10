@@ -1,0 +1,168 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?", "Hello again!"],
+         "context_set": ""
+        },
+        {"tag": "howAreYou",
+         "patterns": ["how are you today", "how is it going", "how have you been", "whats poppin", "Whats up", "whats shaking"],
+         "responses": ["I'm doing very well thank you!", "I'm great! thanks for asking.", "I'm doing very well", "My day has been great so far!"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "depression",
+         "patterns": ["I am feeling depressed", "depression", "depressed","Im feeling depressed", "I feel empty", "I think I am depressed", "I am experiencing depression"],
+         "responses": ["Would you like to hear some techniques to deal with depression?", "Depression huh, would you like to hear some coping techniques?"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call me Thera-bot.", "I'm Thera-bot!", "My name is Thera-bot, the automated psychiatrist."],
+         "context_set": ""
+        },
+        {"tag": "loneliness",
+         "patterns": ["I feel alone", "I have no one to talk to", "Im lonely", "I have no friends", "I am experiencing loneliness", "Im alone"],
+         "responses": ["Would you like to hear some techniques to deal with loneliness?", "You can talk to me! Would you like some techniques to cope with loneliness?"],
+         "context_set": ""
+        },
+        {"tag": "stress",
+         "patterns": ["Im stressed out", "Im very angry", "Im mad", "I am so stressed", "I am full of stress", "I hate this"],
+         "responses": ["Would you like to hear some techniques to deal with stress?", "Calm down! Would you like some techniques to cope with stress?"],
+         "context_set": ""
+        },
+        {"tag": "confirmation",
+         "patterns": ["yes please", "ok", "sure", "absolutely", "yes"],
+         "responses": ["you have said yes"],
+         "context_set": ""
+        },
+        {"tag": "decline",
+         "patterns": ["no", "nope", "no thanks"],
+         "responses": ["you have said no"],
+         "context_set": ""
+        },
+        {"tag": "thanks",
+         "patterns": ["thank you", "thanks", "i appreciate it", "thanks so much", "thank you very much", "thank you so much"],
+         "responses": ["No problem!", "Dont mention it!", "No worries!", "For sure!"],
+         "context_set": ""
+        },
+        {"tag": "explain",
+         "patterns": ["i want to tell you something", "i need to tell you something", "i need to talk", "i have a problem", "ive got something on my chest", "can i tell you something"],
+         "responses": ["Go ahead, I'm listening", "okay, I'm all ears.", "Please, tell me."],
+         "context_set": ""
+        },
+        {"tag": "causes",
+         "patterns": ["where do mental health problems come from", "what cuases mental health problems", "why do i have mental health problems", "why do i feel this way", "what is cuasing me to feel this way"],
+         "responses": ["Problems in mental health can stem from biological, social, and psychological issues that effect your life."],
+         "context_set": ""
+        },
+        {"tag": "whatToDo",
+         "patterns": ["what can i do to feel better", "what can i do to get help", "what should i do", "where can i go to get help", "who should i talk to"],
+         "responses": ["If you are struggling with mental health related problems, it is highly advised that you see a mental health professional, I can only do so much."],
+         "context_set": ""
+        },
+        {"tag": "howDoIKnow",
+         "patterns": ["how do i know if im unwell", "when should i seek help", "how do i know if i need help", "what are signs that im unwell", "when do i find help"],
+         "responses": ["If your beliefs and thoughts are impacting your day-to-day life negatively, its time to seek professional help!"],
+         "context_set": ""
+        },
+        {"tag": "nothingWorks",
+         "patterns": ["nothing is working", "i still feel terrible", "you are not helping", "support is not working", "i cant find help"],
+         "responses": ["Finding the right methods is a difficult process. Be open to new approaches and dont loose hope!"],
+         "context_set": ""
+        },
+        {"tag": "manageGrief",
+         "patterns": ["how can i manage grief", "something very bad happened", "i lost something close to me", "i lost my job", "i have no sense of security", "i have no stability"],
+         "responses": ["It sounds like you are experiencing grief. You should prioritize your own needs first and give yourself as much time to heal as you need."],
+         "context_set": ""
+        },
+        {"tag": "thinkingTraps",
+         "patterns": ["i always overthink", "im always in my own head", "i think too much", "my thoughts are always negative"],
+         "responses": ["It sounds like you are in a thinking trap. Try seperating your thoughts from actual events and challenge thoes thoughts."],
+         "context_set": ""
+        },
+        {"tag": "info",
+         "patterns": ["what are you", "what do you do", "what is your purpose", "what is your job"],
+         "responses": ["Im an automated psychiatrist, I was designed to help guide you to other mental heath resources", "Im a psychiatrist, an automated psychiatrist, desiged to help you!"],
+         "context_set": ""
+        },
+        {"tag": "happiness",
+         "patterns": ["i'm not happy", "can i be happy", "i am never happy", "I haven't been happy"],
+         "responses": ["Dont worry, not everyone can feel happy all the time. However if this is the case more often than not, maybe you should seek professional help."],
+         "context_set": ""
+        },
+        {"tag": "sleep",
+         "patterns": ["i can't sleep", "i never sleep", "i'm too tired", "i can't fall asleep"],
+         "responses": ["It sounds like you are not sleeping enough, a typical cause for sleeplessness is anxiety which would be best treated by a professional. However you could use over-the-counter medications as a short-term cure."],
+         "context_set": ""
+        },
+        {"tag": "eating",
+         "patterns": ["i can't eat", "i'm never hungry", "i don't eat"],
+         "responses": ["It sounds like you are not eating enough, a typical cause for sleeplessness is anxiety which would be best treated by a professional."],
+         "context_set": ""
+        },
+        {"tag": "bored",
+         "patterns": ["i don't want to do anything", "i'm always bored'", "i'm not interested in anything"],
+         "responses": ["How often is this the case? It is possible that you may just be experiencing boredom which might not be a serious issue at all. Try keeping track of how often you feel this way."],
+         "context_set": ""
+        },
+        {"tag": "voices",
+         "patterns": ["i'm hearing voices", "there are voices in my head", "i'm getting wierd ideas"],
+         "responses": ["You are hearing voices? You may be experiencing a product of past severe trauma. However, voices are also a sign of early onset schizophrenia, I suggest seeking professional as soon as you can. "],
+         "context_set": ""
+        },
+        {"tag": "paranoia",
+         "patterns": ["i'm scared all the time", "i'm afraid to go out", "i'm scared of people"],
+         "responses": ["Paranoia can be a prodcut of many mental disorders. If it is severe I would suggest seeking professional help as soon as you can."],
+         "context_set": ""
+        },
+        {"tag": "work",
+         "patterns": ["i work too much", "i'm always at work", "i'm always thinking about work"],
+         "responses": ["You feel you work to much? This may be something as simple as a mid-life crisis. Perhaps its time for change in your life?"],
+         "context_set": ""
+        },
+        {"tag": "school",
+         "patterns": ["i study too much", "i'm always at school", "i'm always thinking about school"],
+         "responses": ["Students often find themselves stressed and exhausted from their studies. I suggest speaking with an academic advisor or mental health professional if this feeling persists."],
+         "context_set": ""
+        },
+        {"tag": "progress",
+         "patterns": ["how do i know if i'm improving", "how do i know my progress", "how do i know if i'm getting worse"],
+         "responses": ["The road to mental health recovery is anything but straight, you will experience both ups and downs. If this feeling worsens I suggest speaking to a mental health professional."],
+         "context_set": ""
+        },
+        {"tag": "next",
+         "patterns": ["what should i do next", "what are next steps", "what should i do after this"],
+         "responses": ["You should contact professional help."],
+         "context_set": ""
+        },
+        {"tag": "medication",
+         "patterns": ["should i take medication", "what medication should i take", "is there any medication"],
+         "responses": ["You should contact professional help and ask them about this"],
+         "context_set": ""
+        },
+        {"tag": "help",
+         "patterns": ["i need help", "i'm not okay", "help"],
+         "responses": ["You should contact professional help!"],
+         "context_set": ""
+        },
+        {"tag": "becomeAPsychiatrist",
+         "patterns": ["is it hard to become a psychiatrist", "how can i become a psychiatrist", "can you help me become a psychiatrist", "what do i need to become a psychiatrist", "what is the best way to become a psychiatrist"],
+         "responses": ["To become a psychiatrist it usually takes at least 6 years, you will need your MD and a Diploma to be officially recognized."],
+         "context_set": ""
+        },
+        {"tag": "beingAPsychiatrist",
+         "patterns": ["what is it like to be a psychiatrist", "do you like being psychiatrist", "what is fun about being psychiatrist", "what is the worst part about being a psychiatrist"],
+         "responses": ["Being a psychiatrist can be stressful and fun at the same time. There is a always high earnings potential for psychiatrists and an excellent job market. However, the stress that can come from dealing with some clients may outweigh thoes benifits."],
+         "context_set": ""
+        },
+        {"tag": "trauma",
+         "patterns": ["i experienced a traumatic event", "i felt trauma", "it was traumatic"],
+         "responses": ["Its best if you speak to a real mental health professional about traumatic events as they can be nuanced and many important factors in recovery can be overlooked."],
+         "context_set": ""
+        } 
+   ]
+}
