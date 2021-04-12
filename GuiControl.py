@@ -7,7 +7,8 @@ Created on Tue Mar  2 09:56:31 2021
 #this will be our chat bot GUI
 
 from tkinter import *
-from main import get_response, bot_name, errorString
+from main import get_response, bot_name, errorString, fr
+#from translate import *
 
 BOTTOM_COLOR = "white"
 BG_COLOR = "#93B7BE"
@@ -17,6 +18,8 @@ TEXTBOX_COLOR = "#BDC2C9"
 
 FONT = "ARIAL 14"
 FONT_BOLD = "ARIAL 13 bold"
+
+
 
 # this class creates the chatbot window using the tkinter library.
 # it imports get_response, bot_name, errorString from main.py which processes user input and porvides a response
@@ -29,6 +32,7 @@ class ChatApplication:
     #how we start the application
     def run(self):
         self.window.mainloop()
+        print("hsadfasdf")
         
     def _setup_main_window(self):
         self.window.title("Thera-bot")
@@ -68,6 +72,17 @@ class ChatApplication:
         send_button = Button(bottom_label, text="Enter", font=FONT_BOLD, width=20, bg=BUTTON_COLOR, command=lambda: self._on_enter_pressed(None))
         send_button.place(relx=0.77, rely=0.008, relheight=0.06, relwidth=0.22)
         
+        #french checkbox
+        fr_button = Checkbutton(bottom_label, text="French", width=10, bg="white",  command=lambda: self.test(None))
+        fr_button.place(relx=0, rely=0.068, relheight=0.015, relwidth=0.13)
+        
+    # add function to toggle the french mode
+    def test(self, event):
+        if(fr.french == 1):
+            fr.french = 0
+        else:
+            fr.french = 1
+        
      # user clicks enter and message is sent    
     def _on_enter_pressed(self,event):
         msg = self.msg_entry.get()
@@ -91,6 +106,8 @@ class ChatApplication:
         
         self.text_widget.see(END)#so we are always able to see the last message
         
+        
 if __name__ == "__main__":
     app = ChatApplication()
     app.run()
+    

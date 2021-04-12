@@ -2,13 +2,20 @@ from trainer import *
 from synonym import *
 from BotActionChart import *
 from wiki import *
-#from GuiControl import *
 
-#author: MichaelOdermatt
+#author: Joshua Kranabetter
 
 bot_name = "Thera-bot"
 prevTag = 'None' #stores the previous input type from the user, used to handle the user saying yes or no
 errorString = ["I'm afraid I don't know what you mean.", "What was that?", "Could you trying saying that again?", "Sorry, my systems are limited. Could you try again?", "I'm not sure I understand"]
+
+class fr:
+    french = 0
+    
+
+def toggleFrench():
+    fr.french = 1
+    
 
 #predict with model
 def bag_of_words(s, words):
