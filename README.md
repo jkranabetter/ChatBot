@@ -6,10 +6,7 @@ The Software Development Lifecycle that we chose is the agile method. This model
 
 ## Limitations
 
-•	The code is limited by the NLP algorithm which aims to understand what the user is writing and provide an answer from a json file with possible answers. Therefore, the bot is limited by the size and complexity of the provided responses. 
-•	Since the bot is following a predetermined structure the same answer can be provided to the user repetitively. 
-•	The bot can translate to french but doesnt understand french input. 
-•	Sometimes the bot returns nothing, I did not have time to fix this error
+The code is limited by the NLP algorithm which aims to understand what the user is writing and provide an answer from a json file with possible answers. Therefore, the bot is limited by the size and complexity of the provided responses. Since the bot is following a predetermined structure the same answer can be provided to the user repetitively. The bot can translate to french but doesnt understand french input. Sometimes the bot returns nothing, I did not have time to fix this error
 
 
 ## Installation and Setup 
