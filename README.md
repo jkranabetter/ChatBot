@@ -18,10 +18,14 @@ The search queries are handled by the pythin wiki api:https://wikipedia.readthed
 The bot looks for search keywords "define", "what is" or "what are", finds the keyword in the sentence, and returns a summary of the keyword. In the case of disambiguation the most relavant article is chosen. This is in its own class called 'wiki.py' and contains two functions called getDefinition() and queryWord(). getDefinition() is called by the main chat program when the user is asking for a definition. It finds the keyword in the string and calls the queryWord() function. The queryWord() funtion gets the summary of the keyword and handles disambiguatioin.
 ![Screenshot](wiki.png)
 
+## Language Translation (french)
+Canada is a bilingual country, so it is important to provide access to french speaking users. I use the google translate API to translate the chatbot responses if the "french" checkbox is ticked. The user must still type in english to be compatable with the rest of the system. 
+![Screenshot](french.png)
+
 ## Features in this Individual Assignment
 * Wiki Search Queries (10 points) (see above for explanation)
-* - (10 points) (see above for explanation)
-* - (5 points) (see above for explanation)
+* Language Translation (10 points) (see above for explanation)
+
 
 
 -------------------------------------Residual Feature Documentation from ASSIGNMENT 3-------------------------------------
