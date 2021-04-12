@@ -8,7 +8,7 @@ Created on Tue Mar  2 09:56:31 2021
 
 from tkinter import *
 from main import get_response, bot_name, errorString, fr
-#from translate import *
+from translate import *
 
 BOTTOM_COLOR = "white"
 BG_COLOR = "#93B7BE"
@@ -99,7 +99,10 @@ class ChatApplication:
         self.text_widget.insert(END, msg1)
         self.text_widget.configure(state=DISABLED)
         
-        msg2 = f"{bot_name}: {get_response(msg)}\n\n"
+        if(fr.french == 0):
+            msg2 = f"{bot_name}: {get_response(msg)}\n\n"
+        else:
+            msg2 = f"{bot_name}: {translate(get_response(msg))}\n\n"   
         self.text_widget.configure(state=NORMAL)
         self.text_widget.insert(END, msg2)
         self.text_widget.configure(state=DISABLED)

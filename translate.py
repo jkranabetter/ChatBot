@@ -13,5 +13,4 @@ translator = google_translator()
 def translate(text):    
     return translator.translate(text,lang_tgt='fr')  
 
-print(translate("goodbye"))
     
